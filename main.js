@@ -59,10 +59,8 @@ console.log(pets);
 
 // 14: .forEach()
 const numbers = [23, 45, 0, 2, 8, 44, 100, 1, 3, 91, 34];
-const addTwo = (num, index, arr) => {
-  let num = numbers[" "];
-  return num + 2;
-};
 numbers.forEach(addTwo);
+function addTwo(num, index, arr) {
+  arr[index] = num + 2;
+}
 console.log(numbers);
-console.log(addTwo);
